@@ -2,8 +2,10 @@ from tkinter import *
 from tkinter.ttk import *
 
 master = Tk() 
-master.geometry("200x200") 
-  
+master.geometry("720x480")
+master.bind("<F11>", lambda event: master.attributes("-fullscreen", True))
+master.bind("<Escape>", lambda event: master.attributes("-fullscreen", False))
+
 def openNewWindowOne(): 
     newWindow = Toplevel(master) 
     newWindow.title("New Window One") 
