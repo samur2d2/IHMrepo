@@ -43,4 +43,4 @@ def CreatTopBar(master):
             listbox.insert(0, textAlarm)
             cont=cont+1
 
-    # threading.Thread(target=alarme).start()
+    threading.Thread(target=alarme).start()
